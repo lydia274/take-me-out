@@ -1,0 +1,60 @@
+[
+    {
+      "id": 1,
+      "name": "Bobs Bake Shop",
+      "address": "12 Espl. Nathalie Sarraute, 75018 Paris",
+      "zipCode": "75018",
+      "type": "café", 
+      "category": "casual",
+      "cost": 10,
+      "duration": 30,
+      "rating": 5,
+      "visited": ["2024-02-05"],
+      "relatedPlaces": [2],
+      "description": "Fav bakery in the neighborhood with bagels and filter coffee.",
+      "openingHours": "09:30 - 23:45", 
+      "website": "https://www.toureiffel.paris/en"
+    },
+    {
+      "id": 2,
+      "name": "Paris Store",
+      "address": "8-10 Rue de l'Évangile, 75018 Paris",
+      "zipCode": "75018",
+      "type": "store",
+      "category": "Asian store",
+      "cost": 20,
+      "duration": 30,
+      "rating": 4,
+      "visited": ["2024-02-05"],
+      "relatedPlaces": [1, 3],
+      "description": "Big affordable asian store with wide variety of stuff.",
+      "openingHours": "09:30 - 23:45", 
+      "website": "https://www.toureiffel.paris/en"
+    },
+    {
+      "id": 3,
+      "name": "Miettes",
+      "address": "9 Rue de l'Olive, 75018 Paris",
+      "zipCode": "75018",
+      "type": "store",
+      "category": "bakery",
+      "cost": 10,
+      "duration": 10,
+      "rating": 4,
+"visited": ["2024-02-05"],
+      "relatedPlaces": [1, 2]
+    },
+    {
+      "id": 4,
+      "name": "Tai An",
+      "address": " 2 Rue de l'Évangile, 75018 Paris",
+      "zipCode": "75018",
+      "type": "store",
+      "category": "takeaway",
+      "cost": 10,
+      "duration": 10,
+      "rating": 5,
+"visited": ["2024-02-05"],
+      "relatedPlaces": [1, 2, 3]
+    }
+  ]

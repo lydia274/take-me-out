@@ -1,26 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-import PlaceCard from './components/PlaceCard/PlaceCard';
+
+import React, {useState} from 'react';
+import './App.styled.jsx';
+import PlacesList from './components/PlacesList/PlacesList';
+import parisData from './data/parisData.json';
+import {AppContainer} from './App.styled.jsx'
 
 function App() {
+
+  const [places, setPlaces] = useState(parisData);
+
+const addPlace = (newPlace) => {
+  setPlaces([...places, newPlace]);
+};
   return (
-    <div className="App">
-    <PlaceCard/>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <AppContainer>
+      <h1>Take Me Out - Paris</h1>
+      <PlacesList 
+        places={places} 
+      />
+    </AppContainer>
+
+    </>
   );
 }
 
